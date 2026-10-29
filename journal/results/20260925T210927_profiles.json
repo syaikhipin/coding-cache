@@ -1,0 +1,1415 @@
+{
+ "ts": "2026-09-25T21:09:27",
+ "kind": "profiles",
+ "config": {
+  "steps": 12,
+  "seed": 0,
+  "compact_at": 12400,
+  "api": "script",
+  "profiles": "pfs,rc,mc"
+ },
+ "results": {
+  "pfs": {
+   "record": {
+    "ts": "2026-09-25T21:09:27",
+    "profile": "pfs",
+    "mechanisms": {
+     "system_stratification": "stratified3",
+     "breakpoint_style": "per_stratum",
+     "env_mode": "frozen",
+     "compaction": "cache_aware",
+     "tool_order": "frozen",
+     "cache_warmer": false,
+     "inject_env_change_at_step": null,
+     "compact_at_tokens": null
+    },
+    "task": "bugfix",
+    "steps": 12,
+    "seed": 0,
+    "api_mode": "script",
+    "model": "dh/dahono/deepseek-v4.1-flash",
+    "env_change_steps": [
+     4,
+     8
+    ],
+    "compact_at_tokens": 12400,
+    "tool_churn": true,
+    "env_notes_delivered": [
+     "[env change] {'cwd': '/workspace/toy-repo', 'model': 'dh/dahono/deepseek-v4.1-flash', 'date': '2026-09-23', 'git_status': 'M calc.py', 'platform': 'macOS-25.2'}",
+     "[env change] {'cwd': '/workspace/toy-repo', 'model': 'dh/dahono/deepseek-v4.1-flash', 'date': '2026-09-23', 'git_status': 'M calc.py\\nM shapes.py', 'platform': 'macOS-25.2'}"
+    ]
+   },
+   "trace": "20260925T210927_pfs_s0.jsonl",
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.9139,
+    "mean_pairwise_lcp_ratio": 0.9326,
+    "invalidation_events": [],
+    "n_invalidation_events": 0,
+    "transcript_reset_events": [
+     {
+      "at_step": 9,
+      "lcp_ratio": 0.2587
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 4
+   },
+   "metrics_pairs": [
+    {
+     "from_step": 0,
+     "to_step": 1,
+     "prev_tokens": 4560,
+     "cur_tokens": 16818,
+     "lcp_tokens": 4560,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 1,
+     "to_step": 2,
+     "prev_tokens": 16818,
+     "cur_tokens": 16971,
+     "lcp_tokens": 16818,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 2,
+     "to_step": 3,
+     "prev_tokens": 16971,
+     "cur_tokens": 17072,
+     "lcp_tokens": 16971,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 3,
+     "to_step": 4,
+     "prev_tokens": 17072,
+     "cur_tokens": 17187,
+     "lcp_tokens": 17072,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 4,
+     "to_step": 5,
+     "prev_tokens": 17187,
+     "cur_tokens": 17264,
+     "lcp_tokens": 17187,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 5,
+     "to_step": 6,
+     "prev_tokens": 17264,
+     "cur_tokens": 17423,
+     "lcp_tokens": 17264,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 6,
+     "to_step": 7,
+     "prev_tokens": 17423,
+     "cur_tokens": 17524,
+     "lcp_tokens": 17423,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 7,
+     "to_step": 8,
+     "prev_tokens": 17524,
+     "cur_tokens": 17645,
+     "lcp_tokens": 17524,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 8,
+     "to_step": 9,
+     "prev_tokens": 17645,
+     "cur_tokens": 4673,
+     "lcp_tokens": 4565,
+     "lcp_ratio_prev": 0.2587,
+     "lcp_break_region": "messages",
+     "transcript_reset": true
+    },
+    {
+     "from_step": 9,
+     "to_step": 10,
+     "prev_tokens": 4673,
+     "cur_tokens": 4819,
+     "lcp_tokens": 4673,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 10,
+     "to_step": 11,
+     "prev_tokens": 4819,
+     "cur_tokens": 4920,
+     "lcp_tokens": 4819,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    }
+   ],
+   "sim": {
+    "anthropic": {
+     "summary": {
+      "requests": 13,
+      "total_tokens": 174630,
+      "read_tokens": 156516,
+      "write_tokens": 18082,
+      "uncached_tokens": 32,
+      "cached_read_tokens": 156516,
+      "overall_hit_ratio": 0.8963,
+      "turn_only_hit_ratio": 0.8852,
+      "total_cost_units": 0.038286,
+      "nocache_cost_units": 0.17463,
+      "cost_vs_nocache": 0.2192,
+      "turn_only_cost_vs_nocache": 0.232
+     },
+     "rows": [
+      {
+       "kind": "turn",
+       "tokens": 4560,
+       "read": 0,
+       "write": 4560,
+       "uncached": 0,
+       "cost_units": 0.0057,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 16818,
+       "read": 4560,
+       "write": 12258,
+       "uncached": 0,
+       "cost_units": 0.0157785,
+       "hit_ratio": 0.2711
+      },
+      {
+       "kind": "turn",
+       "tokens": 16971,
+       "read": 16818,
+       "write": 153,
+       "uncached": 0,
+       "cost_units": 0.0018730500000000002,
+       "hit_ratio": 0.991
+      },
+      {
+       "kind": "turn",
+       "tokens": 17072,
+       "read": 16971,
+       "write": 101,
+       "uncached": 0,
+       "cost_units": 0.00182335,
+       "hit_ratio": 0.9941
+      },
+      {
+       "kind": "turn",
+       "tokens": 17187,
+       "read": 17072,
+       "write": 115,
+       "uncached": 0,
+       "cost_units": 0.00185095,
+       "hit_ratio": 0.9933
+      },
+      {
+       "kind": "turn",
+       "tokens": 17264,
+       "read": 17187,
+       "write": 77,
+       "uncached": 0,
+       "cost_units": 0.00181495,
+       "hit_ratio": 0.9955
+      },
+      {
+       "kind": "turn",
+       "tokens": 17423,
+       "read": 17264,
+       "write": 159,
+       "uncached": 0,
+       "cost_units": 0.00192515,
+       "hit_ratio": 0.9909
+      },
+      {
+       "kind": "turn",
+       "tokens": 17524,
+       "read": 17423,
+       "write": 101,
+       "uncached": 0,
+       "cost_units": 0.0018685500000000003,
+       "hit_ratio": 0.9942
+      },
+      {
+       "kind": "turn",
+       "tokens": 17645,
+       "read": 17524,
+       "write": 121,
+       "uncached": 0,
+       "cost_units": 0.00190365,
+       "hit_ratio": 0.9931
+      },
+      {
+       "kind": "compact",
+       "tokens": 17754,
+       "read": 17645,
+       "write": 77,
+       "uncached": 32,
+       "cost_units": 0.00189275,
+       "hit_ratio": 0.9939
+      },
+      {
+       "kind": "turn",
+       "tokens": 4673,
+       "read": 4560,
+       "write": 113,
+       "uncached": 0,
+       "cost_units": 0.00059725,
+       "hit_ratio": 0.9758
+      },
+      {
+       "kind": "turn",
+       "tokens": 4819,
+       "read": 4673,
+       "write": 146,
+       "uncached": 0,
+       "cost_units": 0.0006498,
+       "hit_ratio": 0.9697
+      },
+      {
+       "kind": "turn",
+       "tokens": 4920,
+       "read": 4819,
+       "write": 101,
+       "uncached": 0,
+       "cost_units": 0.0006081500000000001,
+       "hit_ratio": 0.9795
+      }
+     ]
+    },
+    "openai": {
+     "summary": {
+      "requests": 13,
+      "total_tokens": 174630,
+      "read_tokens": 155648,
+      "write_tokens": 18982,
+      "uncached_tokens": 0,
+      "cached_read_tokens": 155648,
+      "overall_hit_ratio": 0.8913,
+      "turn_only_hit_ratio": 0.8804,
+      "total_cost_units": 0.039292,
+      "nocache_cost_units": 0.17463,
+      "cost_vs_nocache": 0.225,
+      "turn_only_cost_vs_nocache": 0.2376
+     },
+     "rows": [
+      {
+       "kind": "turn",
+       "tokens": 4560,
+       "read": 0,
+       "write": 4560,
+       "uncached": 0,
+       "cost_units": 0.0057,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 16818,
+       "read": 4480,
+       "write": 12338,
+       "uncached": 0,
+       "cost_units": 0.0158705,
+       "hit_ratio": 0.2664
+      },
+      {
+       "kind": "turn",
+       "tokens": 16971,
+       "read": 16768,
+       "write": 203,
+       "uncached": 0,
+       "cost_units": 0.0019305500000000003,
+       "hit_ratio": 0.988
+      },
+      {
+       "kind": "turn",
+       "tokens": 17072,
+       "read": 16896,
+       "write": 176,
+       "uncached": 0,
+       "cost_units": 0.0019096000000000002,
+       "hit_ratio": 0.9897
+      },
+      {
+       "kind": "turn",
+       "tokens": 17187,
+       "read": 17024,
+       "write": 163,
+       "uncached": 0,
+       "cost_units": 0.0019061500000000001,
+       "hit_ratio": 0.9905
+      },
+      {
+       "kind": "turn",
+       "tokens": 17264,
+       "read": 17152,
+       "write": 112,
+       "uncached": 0,
+       "cost_units": 0.0018552,
+       "hit_ratio": 0.9935
+      },
+      {
+       "kind": "turn",
+       "tokens": 17423,
+       "read": 17152,
+       "write": 271,
+       "uncached": 0,
+       "cost_units": 0.0020539499999999997,
+       "hit_ratio": 0.9844
+      },
+      {
+       "kind": "turn",
+       "tokens": 17524,
+       "read": 17408,
+       "write": 116,
+       "uncached": 0,
+       "cost_units": 0.0018858000000000002,
+       "hit_ratio": 0.9934
+      },
+      {
+       "kind": "turn",
+       "tokens": 17645,
+       "read": 17408,
+       "write": 237,
+       "uncached": 0,
+       "cost_units": 0.0020370500000000003,
+       "hit_ratio": 0.9866
+      },
+      {
+       "kind": "compact",
+       "tokens": 17754,
+       "read": 17536,
+       "write": 218,
+       "uncached": 0,
+       "cost_units": 0.0020261000000000003,
+       "hit_ratio": 0.9877
+      },
+      {
+       "kind": "turn",
+       "tokens": 4673,
+       "read": 4480,
+       "write": 193,
+       "uncached": 0,
+       "cost_units": 0.00068925,
+       "hit_ratio": 0.9587
+      },
+      {
+       "kind": "turn",
+       "tokens": 4819,
+       "read": 4608,
+       "write": 211,
+       "uncached": 0,
+       "cost_units": 0.0007245499999999999,
+       "hit_ratio": 0.9562
+      },
+      {
+       "kind": "turn",
+       "tokens": 4920,
+       "read": 4736,
+       "write": 184,
+       "uncached": 0,
+       "cost_units": 0.0007036,
+       "hit_ratio": 0.9626
+      }
+     ]
+    }
+   }
+  },
+  "rc": {
+   "record": {
+    "ts": "2026-09-25T21:09:27",
+    "profile": "rc",
+    "mechanisms": {
+     "system_stratification": "single",
+     "breakpoint_style": "system_plus_trailing",
+     "env_mode": "per_step",
+     "compaction": "cache_dead",
+     "tool_order": "per_step_sorted",
+     "cache_warmer": false,
+     "inject_env_change_at_step": null,
+     "compact_at_tokens": null
+    },
+    "task": "bugfix",
+    "steps": 12,
+    "seed": 0,
+    "api_mode": "script",
+    "model": "dh/dahono/deepseek-v4.1-flash",
+    "env_change_steps": [
+     4,
+     8
+    ],
+    "compact_at_tokens": 12400,
+    "tool_churn": true,
+    "env_notes_delivered": []
+   },
+   "trace": "20260925T210927_rc_s0.jsonl",
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.5114,
+    "mean_pairwise_lcp_ratio": 0.5762,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 4,
+      "region": "system",
+      "lcp_ratio": 0.0251
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.0297
+     }
+    ],
+    "n_invalidation_events": 4,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2573
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "metrics_pairs": [
+    {
+     "from_step": 0,
+     "to_step": 1,
+     "prev_tokens": 4531,
+     "cur_tokens": 16789,
+     "lcp_tokens": 4531,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 1,
+     "to_step": 2,
+     "prev_tokens": 16789,
+     "cur_tokens": 16942,
+     "lcp_tokens": 16789,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 2,
+     "to_step": 3,
+     "prev_tokens": 16942,
+     "cur_tokens": 16957,
+     "lcp_tokens": 222,
+     "lcp_ratio_prev": 0.0131,
+     "lcp_break_region": "tools",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 3,
+     "to_step": 4,
+     "prev_tokens": 16957,
+     "cur_tokens": 17046,
+     "lcp_tokens": 425,
+     "lcp_ratio_prev": 0.0251,
+     "lcp_break_region": "system",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 4,
+     "to_step": 5,
+     "prev_tokens": 17046,
+     "cur_tokens": 17123,
+     "lcp_tokens": 17046,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 5,
+     "to_step": 6,
+     "prev_tokens": 17123,
+     "cur_tokens": 17368,
+     "lcp_tokens": 222,
+     "lcp_ratio_prev": 0.013,
+     "lcp_break_region": "tools",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 6,
+     "to_step": 7,
+     "prev_tokens": 17368,
+     "cur_tokens": 17469,
+     "lcp_tokens": 17368,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 7,
+     "to_step": 8,
+     "prev_tokens": 17469,
+     "cur_tokens": 17562,
+     "lcp_tokens": 518,
+     "lcp_ratio_prev": 0.0297,
+     "lcp_break_region": "system",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 8,
+     "to_step": 9,
+     "prev_tokens": 17562,
+     "cur_tokens": 17639,
+     "lcp_tokens": 17562,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 9,
+     "to_step": 10,
+     "prev_tokens": 17639,
+     "cur_tokens": 4716,
+     "lcp_tokens": 4539,
+     "lcp_ratio_prev": 0.2573,
+     "lcp_break_region": "messages",
+     "transcript_reset": true
+    },
+    {
+     "from_step": 10,
+     "to_step": 11,
+     "prev_tokens": 4716,
+     "cur_tokens": 4817,
+     "lcp_tokens": 4716,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    }
+   ],
+   "sim": {
+    "anthropic": {
+     "summary": {
+      "requests": 13,
+      "total_tokens": 181926,
+      "read_tokens": 82453,
+      "write_tokens": 99473,
+      "uncached_tokens": 0,
+      "cached_read_tokens": 82453,
+      "overall_hit_ratio": 0.4532,
+      "turn_only_hit_ratio": 0.488,
+      "total_cost_units": 0.132587,
+      "nocache_cost_units": 0.181926,
+      "cost_vs_nocache": 0.7288,
+      "turn_only_cost_vs_nocache": 0.6888
+     },
+     "rows": [
+      {
+       "kind": "turn",
+       "tokens": 4531,
+       "read": 0,
+       "write": 4531,
+       "uncached": 0,
+       "cost_units": 0.00566375,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 16789,
+       "read": 4531,
+       "write": 12258,
+       "uncached": 0,
+       "cost_units": 0.0157756,
+       "hit_ratio": 0.2699
+      },
+      {
+       "kind": "turn",
+       "tokens": 16942,
+       "read": 16789,
+       "write": 153,
+       "uncached": 0,
+       "cost_units": 0.0018701500000000001,
+       "hit_ratio": 0.991
+      },
+      {
+       "kind": "turn",
+       "tokens": 16957,
+       "read": 0,
+       "write": 16957,
+       "uncached": 0,
+       "cost_units": 0.02119625,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17046,
+       "read": 0,
+       "write": 17046,
+       "uncached": 0,
+       "cost_units": 0.0213075,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17123,
+       "read": 17046,
+       "write": 77,
+       "uncached": 0,
+       "cost_units": 0.00180085,
+       "hit_ratio": 0.9955
+      },
+      {
+       "kind": "turn",
+       "tokens": 17368,
+       "read": 0,
+       "write": 17368,
+       "uncached": 0,
+       "cost_units": 0.02171,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17469,
+       "read": 17368,
+       "write": 101,
+       "uncached": 0,
+       "cost_units": 0.0018630500000000002,
+       "hit_ratio": 0.9942
+      },
+      {
+       "kind": "turn",
+       "tokens": 17562,
+       "read": 0,
+       "write": 17562,
+       "uncached": 0,
+       "cost_units": 0.0219525,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17639,
+       "read": 17562,
+       "write": 77,
+       "uncached": 0,
+       "cost_units": 0.00185245,
+       "hit_ratio": 0.9956
+      },
+      {
+       "kind": "compact",
+       "tokens": 12967,
+       "read": 0,
+       "write": 12967,
+       "uncached": 0,
+       "cost_units": 0.01620875,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 4716,
+       "read": 4441,
+       "write": 275,
+       "uncached": 0,
+       "cost_units": 0.00078785,
+       "hit_ratio": 0.9417
+      },
+      {
+       "kind": "turn",
+       "tokens": 4817,
+       "read": 4716,
+       "write": 101,
+       "uncached": 0,
+       "cost_units": 0.00059785,
+       "hit_ratio": 0.979
+      }
+     ]
+    },
+    "openai": {
+     "summary": {
+      "requests": 13,
+      "total_tokens": 181926,
+      "read_tokens": 82176,
+      "write_tokens": 99750,
+      "uncached_tokens": 0,
+      "cached_read_tokens": 82176,
+      "overall_hit_ratio": 0.4517,
+      "turn_only_hit_ratio": 0.4864,
+      "total_cost_units": 0.132905,
+      "nocache_cost_units": 0.181926,
+      "cost_vs_nocache": 0.7305,
+      "turn_only_cost_vs_nocache": 0.6907
+     },
+     "rows": [
+      {
+       "kind": "turn",
+       "tokens": 4531,
+       "read": 0,
+       "write": 4531,
+       "uncached": 0,
+       "cost_units": 0.00566375,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 16789,
+       "read": 4480,
+       "write": 12309,
+       "uncached": 0,
+       "cost_units": 0.01583425,
+       "hit_ratio": 0.2668
+      },
+      {
+       "kind": "turn",
+       "tokens": 16942,
+       "read": 16768,
+       "write": 174,
+       "uncached": 0,
+       "cost_units": 0.0018943000000000002,
+       "hit_ratio": 0.9897
+      },
+      {
+       "kind": "turn",
+       "tokens": 16957,
+       "read": 0,
+       "write": 16957,
+       "uncached": 0,
+       "cost_units": 0.02119625,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17046,
+       "read": 0,
+       "write": 17046,
+       "uncached": 0,
+       "cost_units": 0.0213075,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17123,
+       "read": 17024,
+       "write": 99,
+       "uncached": 0,
+       "cost_units": 0.0018261500000000001,
+       "hit_ratio": 0.9942
+      },
+      {
+       "kind": "turn",
+       "tokens": 17368,
+       "read": 0,
+       "write": 17368,
+       "uncached": 0,
+       "cost_units": 0.02171,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17469,
+       "read": 17280,
+       "write": 189,
+       "uncached": 0,
+       "cost_units": 0.00196425,
+       "hit_ratio": 0.9892
+      },
+      {
+       "kind": "turn",
+       "tokens": 17562,
+       "read": 0,
+       "write": 17562,
+       "uncached": 0,
+       "cost_units": 0.0219525,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17639,
+       "read": 17536,
+       "write": 103,
+       "uncached": 0,
+       "cost_units": 0.00188235,
+       "hit_ratio": 0.9942
+      },
+      {
+       "kind": "compact",
+       "tokens": 12967,
+       "read": 0,
+       "write": 12967,
+       "uncached": 0,
+       "cost_units": 0.01620875,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 4716,
+       "read": 4480,
+       "write": 236,
+       "uncached": 0,
+       "cost_units": 0.000743,
+       "hit_ratio": 0.95
+      },
+      {
+       "kind": "turn",
+       "tokens": 4817,
+       "read": 4608,
+       "write": 209,
+       "uncached": 0,
+       "cost_units": 0.0007220499999999999,
+       "hit_ratio": 0.9566
+      }
+     ]
+    }
+   }
+  },
+  "mc": {
+   "record": {
+    "ts": "2026-09-25T21:09:27",
+    "profile": "mc",
+    "mechanisms": {
+     "system_stratification": "single",
+     "breakpoint_style": "system_tools_trailing",
+     "env_mode": "minimal",
+     "compaction": "retention_none",
+     "tool_order": "per_step_sorted",
+     "cache_warmer": true,
+     "inject_env_change_at_step": null,
+     "compact_at_tokens": null
+    },
+    "task": "bugfix",
+    "steps": 12,
+    "seed": 0,
+    "api_mode": "script",
+    "model": "dh/dahono/deepseek-v4.1-flash",
+    "env_change_steps": [
+     4,
+     8
+    ],
+    "compact_at_tokens": 12400,
+    "tool_churn": true,
+    "env_notes_delivered": []
+   },
+   "trace": "20260925T210927_mc_s0.jsonl",
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 4,
+    "aggregate_lcp_ratio": 0.6358,
+    "mean_pairwise_lcp_ratio": 0.6851,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.2532
+     }
+    ],
+    "n_invalidation_events": 3,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2568
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "metrics_pairs": [
+    {
+     "from_step": 0,
+     "to_step": 1,
+     "prev_tokens": 4518,
+     "cur_tokens": 16776,
+     "lcp_tokens": 4518,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 1,
+     "to_step": 2,
+     "prev_tokens": 16776,
+     "cur_tokens": 16929,
+     "lcp_tokens": 16776,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 2,
+     "to_step": 3,
+     "prev_tokens": 16929,
+     "cur_tokens": 16944,
+     "lcp_tokens": 222,
+     "lcp_ratio_prev": 0.0131,
+     "lcp_break_region": "tools",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 3,
+     "to_step": 4,
+     "prev_tokens": 16944,
+     "cur_tokens": 17033,
+     "lcp_tokens": 16944,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 4,
+     "to_step": 5,
+     "prev_tokens": 17033,
+     "cur_tokens": 17110,
+     "lcp_tokens": 17033,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 5,
+     "to_step": 6,
+     "prev_tokens": 17110,
+     "cur_tokens": 17355,
+     "lcp_tokens": 222,
+     "lcp_ratio_prev": 0.013,
+     "lcp_break_region": "tools",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 6,
+     "to_step": 7,
+     "prev_tokens": 17355,
+     "cur_tokens": 17456,
+     "lcp_tokens": 17355,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 7,
+     "to_step": 8,
+     "prev_tokens": 17456,
+     "cur_tokens": 17549,
+     "lcp_tokens": 4419,
+     "lcp_ratio_prev": 0.2532,
+     "lcp_break_region": "system",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 8,
+     "to_step": 9,
+     "prev_tokens": 17549,
+     "cur_tokens": 17626,
+     "lcp_tokens": 17549,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 9,
+     "to_step": 10,
+     "prev_tokens": 17626,
+     "cur_tokens": 4703,
+     "lcp_tokens": 4526,
+     "lcp_ratio_prev": 0.2568,
+     "lcp_break_region": "messages",
+     "transcript_reset": true
+    },
+    {
+     "from_step": 10,
+     "to_step": 11,
+     "prev_tokens": 4703,
+     "cur_tokens": 4804,
+     "lcp_tokens": 4703,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    }
+   ],
+   "sim": {
+    "anthropic": {
+     "summary": {
+      "requests": 17,
+      "total_tokens": 242999,
+      "read_tokens": 172627,
+      "write_tokens": 52568,
+      "uncached_tokens": 17804,
+      "cached_read_tokens": 172627,
+      "overall_hit_ratio": 0.7104,
+      "turn_only_hit_ratio": 0.6886,
+      "total_cost_units": 0.100777,
+      "nocache_cost_units": 0.242999,
+      "cost_vs_nocache": 0.4147,
+      "turn_only_cost_vs_nocache": 0.4581
+     },
+     "rows": [
+      {
+       "kind": "turn",
+       "tokens": 4518,
+       "read": 0,
+       "write": 4518,
+       "uncached": 0,
+       "cost_units": 0.0056475,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 16776,
+       "read": 4518,
+       "write": 12258,
+       "uncached": 0,
+       "cost_units": 0.015774299999999998,
+       "hit_ratio": 0.2693
+      },
+      {
+       "kind": "turn",
+       "tokens": 16929,
+       "read": 16776,
+       "write": 153,
+       "uncached": 0,
+       "cost_units": 0.0018688500000000002,
+       "hit_ratio": 0.991
+      },
+      {
+       "kind": "warmer",
+       "tokens": 16929,
+       "read": 16929,
+       "write": 0,
+       "uncached": 0,
+       "cost_units": 0.0016929,
+       "hit_ratio": 1.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 16944,
+       "read": 0,
+       "write": 16944,
+       "uncached": 0,
+       "cost_units": 0.02118,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17033,
+       "read": 16944,
+       "write": 89,
+       "uncached": 0,
+       "cost_units": 0.00180565,
+       "hit_ratio": 0.9948
+      },
+      {
+       "kind": "turn",
+       "tokens": 17110,
+       "read": 17033,
+       "write": 77,
+       "uncached": 0,
+       "cost_units": 0.0017995500000000002,
+       "hit_ratio": 0.9955
+      },
+      {
+       "kind": "warmer",
+       "tokens": 17110,
+       "read": 17110,
+       "write": 0,
+       "uncached": 0,
+       "cost_units": 0.001711,
+       "hit_ratio": 1.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17355,
+       "read": 16929,
+       "write": 426,
+       "uncached": 0,
+       "cost_units": 0.0022254,
+       "hit_ratio": 0.9755
+      },
+      {
+       "kind": "turn",
+       "tokens": 17456,
+       "read": 17355,
+       "write": 101,
+       "uncached": 0,
+       "cost_units": 0.00186175,
+       "hit_ratio": 0.9942
+      },
+      {
+       "kind": "turn",
+       "tokens": 17549,
+       "read": 0,
+       "write": 17549,
+       "uncached": 0,
+       "cost_units": 0.02193625,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "warmer",
+       "tokens": 17549,
+       "read": 17549,
+       "write": 0,
+       "uncached": 0,
+       "cost_units": 0.0017549,
+       "hit_ratio": 1.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17626,
+       "read": 17549,
+       "write": 77,
+       "uncached": 0,
+       "cost_units": 0.0018511500000000002,
+       "hit_ratio": 0.9956
+      },
+      {
+       "kind": "compact",
+       "tokens": 17804,
+       "read": 0,
+       "write": 0,
+       "uncached": 17804,
+       "cost_units": 0.017804,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 4703,
+       "read": 4428,
+       "write": 275,
+       "uncached": 0,
+       "cost_units": 0.0007865499999999999,
+       "hit_ratio": 0.9415
+      },
+      {
+       "kind": "turn",
+       "tokens": 4804,
+       "read": 4703,
+       "write": 101,
+       "uncached": 0,
+       "cost_units": 0.0005965499999999999,
+       "hit_ratio": 0.979
+      },
+      {
+       "kind": "warmer",
+       "tokens": 4804,
+       "read": 4804,
+       "write": 0,
+       "uncached": 0,
+       "cost_units": 0.0004804,
+       "hit_ratio": 1.0
+      }
+     ]
+    },
+    "openai": {
+     "summary": {
+      "requests": 17,
+      "total_tokens": 242999,
+      "read_tokens": 194048,
+      "write_tokens": 48951,
+      "uncached_tokens": 0,
+      "cached_read_tokens": 194048,
+      "overall_hit_ratio": 0.7986,
+      "turn_only_hit_ratio": 0.7128,
+      "total_cost_units": 0.080594,
+      "nocache_cost_units": 0.242999,
+      "cost_vs_nocache": 0.3317,
+      "turn_only_cost_vs_nocache": 0.4303
+     },
+     "rows": [
+      {
+       "kind": "turn",
+       "tokens": 4518,
+       "read": 0,
+       "write": 4518,
+       "uncached": 0,
+       "cost_units": 0.0056475,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 16776,
+       "read": 4480,
+       "write": 12296,
+       "uncached": 0,
+       "cost_units": 0.015818,
+       "hit_ratio": 0.267
+      },
+      {
+       "kind": "turn",
+       "tokens": 16929,
+       "read": 16768,
+       "write": 161,
+       "uncached": 0,
+       "cost_units": 0.0018780500000000002,
+       "hit_ratio": 0.9905
+      },
+      {
+       "kind": "warmer",
+       "tokens": 16929,
+       "read": 16896,
+       "write": 33,
+       "uncached": 0,
+       "cost_units": 0.0017308500000000001,
+       "hit_ratio": 0.9981
+      },
+      {
+       "kind": "turn",
+       "tokens": 16944,
+       "read": 0,
+       "write": 16944,
+       "uncached": 0,
+       "cost_units": 0.02118,
+       "hit_ratio": 0.0
+      },
+      {
+       "kind": "turn",
+       "tokens": 17033,
+       "read": 16896,
+       "write": 137,
+       "uncached": 0,
+       "cost_units": 0.00186085,
+       "hit_ratio": 0.992
+      },
+      {
+       "kind": "turn",
+       "tokens": 17110,
+       "read": 17024,
+       "write": 86,
+       "uncached": 0,
+       "cost_units": 0.0018099000000000001,
+       "hit_ratio": 0.995
+      },
+      {
+       "kind": "warmer",
+       "tokens": 17110,
+       "read": 17024,
+       "write": 86,
+       "uncached": 0,
+       "cost_units": 0.0018099000000000001,
+       "hit_ratio": 0.995
+      },
+      {
+       "kind": "turn",
+       "tokens": 17355,
+       "read": 16896,
+       "write": 459,
+       "uncached": 0,
+       "cost_units": 0.0022633500000000003,
+       "hit_ratio": 0.9736
+      },
+      {
+       "kind": "turn",
+       "tokens": 17456,
+       "read": 17280,
+       "write": 176,
+       "uncached": 0,
+       "cost_units": 0.001948,
+       "hit_ratio": 0.9899
+      },
+      {
+       "kind": "turn",
+       "tokens": 17549,
+       "read": 4352,
+       "write": 13197,
+       "uncached": 0,
+       "cost_units": 0.01693145,
+       "hit_ratio": 0.248
+      },
+      {
+       "kind": "warmer",
+       "tokens": 17549,
+       "read": 17536,
+       "write": 13,
+       "uncached": 0,
+       "cost_units": 0.0017698500000000001,
+       "hit_ratio": 0.9993
+      },
+      {
+       "kind": "turn",
+       "tokens": 17626,
+       "read": 17536,
+       "write": 90,
+       "uncached": 0,
+       "cost_units": 0.0018661,
+       "hit_ratio": 0.9949
+      },
+      {
+       "kind": "compact",
+       "tokens": 17804,
+       "read": 17536,
+       "write": 268,
+       "uncached": 0,
+       "cost_units": 0.0020886000000000004,
+       "hit_ratio": 0.9849
+      },
+      {
+       "kind": "turn",
+       "tokens": 4703,
+       "read": 4480,
+       "write": 223,
+       "uncached": 0,
+       "cost_units": 0.00072675,
+       "hit_ratio": 0.9526
+      },
+      {
+       "kind": "turn",
+       "tokens": 4804,
+       "read": 4608,
+       "write": 196,
+       "uncached": 0,
+       "cost_units": 0.0007057999999999999,
+       "hit_ratio": 0.9592
+      },
+      {
+       "kind": "warmer",
+       "tokens": 4804,
+       "read": 4736,
+       "write": 68,
+       "uncached": 0,
+       "cost_units": 0.0005586,
+       "hit_ratio": 0.9858
+      }
+     ]
+    }
+   }
+  }
+ }
+}

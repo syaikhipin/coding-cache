@@ -1,0 +1,20 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+
+# 1.6 GB of pre-revision traces; the current sweep-traces/ supersedes them
+journal/superseded-r2/
+
+# LaTeX intermediates (main.pdf is committed)
+paper/ieee/*.aux
+paper/ieee/*.log
+paper/ieee/*.fls
+paper/ieee/*.fdb_latexmk
+paper/ieee/*.out
+paper/ieee/*.synctex.gz
+paper/ieee/*.blg
+paper/ieee/*.bbl
+
+# manuscript sources are deliberately not published here
+/paper/

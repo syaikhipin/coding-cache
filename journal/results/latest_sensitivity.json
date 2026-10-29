@@ -1,0 +1,234 @@
+{
+ "steps_opts": [
+  10.0,
+  30.0,
+  60.0,
+  120.0
+ ],
+ "ttl_opts": [
+  300,
+  3600
+ ],
+ "sensitivity": {
+  "20260925T210927_mc_s0.jsonl": {
+   "step10s_ttl300": 0.7104,
+   "step10s_ttl3600": 0.7104,
+   "step30s_ttl300": 0.7104,
+   "step30s_ttl3600": 0.7104,
+   "step60s_ttl300": 0.7104,
+   "step60s_ttl3600": 0.7104,
+   "step120s_ttl300": 0.6225,
+   "step120s_ttl3600": 0.7104
+  },
+  "20260925T210927_pfs_s0.jsonl": {
+   "step10s_ttl300": 0.8963,
+   "step10s_ttl3600": 0.8963,
+   "step30s_ttl300": 0.8963,
+   "step30s_ttl3600": 0.8963,
+   "step60s_ttl300": 0.8702,
+   "step60s_ttl3600": 0.8963,
+   "step120s_ttl300": 0.8702,
+   "step120s_ttl3600": 0.8963
+  },
+  "20260925T210927_rc_s0.jsonl": {
+   "step10s_ttl300": 0.4532,
+   "step10s_ttl3600": 0.4532,
+   "step30s_ttl300": 0.4532,
+   "step30s_ttl3600": 0.4532,
+   "step60s_ttl300": 0.4532,
+   "step60s_ttl3600": 0.4532,
+   "step120s_ttl300": 0.4288,
+   "step120s_ttl3600": 0.4532
+  },
+  "20260925T211328_A1_RC+frozen-env_s0.jsonl": {
+   "step10s_ttl300": 0.7163,
+   "step10s_ttl3600": 0.7163,
+   "step30s_ttl300": 0.7163,
+   "step30s_ttl3600": 0.7163,
+   "step60s_ttl300": 0.6894,
+   "step60s_ttl3600": 0.7163,
+   "step120s_ttl300": 0.5893,
+   "step120s_ttl3600": 0.7163
+  },
+  "20260925T211328_A2_RC+frozen-tools_s0.jsonl": {
+   "step10s_ttl300": 0.6405,
+   "step10s_ttl3600": 0.6405,
+   "step30s_ttl300": 0.6405,
+   "step30s_ttl3600": 0.6405,
+   "step60s_ttl300": 0.6405,
+   "step60s_ttl3600": 0.6405,
+   "step120s_ttl300": 0.6161,
+   "step120s_ttl3600": 0.6405
+  },
+  "20260925T211328_A3_RC+stratified3_s0.jsonl": {
+   "step10s_ttl300": 0.5226,
+   "step10s_ttl3600": 0.5226,
+   "step30s_ttl300": 0.5226,
+   "step30s_ttl3600": 0.5226,
+   "step60s_ttl300": 0.499,
+   "step60s_ttl3600": 0.5226,
+   "step120s_ttl300": 0.4755,
+   "step120s_ttl3600": 0.5226
+  },
+  "20260925T211328_A4_RC+per_stratum_bp_s0.jsonl": {
+   "step10s_ttl300": 0.4532,
+   "step10s_ttl3600": 0.4532,
+   "step30s_ttl300": 0.4532,
+   "step30s_ttl3600": 0.4532,
+   "step60s_ttl300": 0.4532,
+   "step60s_ttl3600": 0.4532,
+   "step120s_ttl300": 0.4288,
+   "step120s_ttl3600": 0.4532
+  },
+  "20260925T211328_A5_RC+cache_aware_s0.jsonl": {
+   "step10s_ttl300": 0.5359,
+   "step10s_ttl3600": 0.5359,
+   "step30s_ttl300": 0.5359,
+   "step30s_ttl3600": 0.5359,
+   "step60s_ttl300": 0.5359,
+   "step60s_ttl3600": 0.5359,
+   "step120s_ttl300": 0.5121,
+   "step120s_ttl3600": 0.5359
+  },
+  "20260925T211328_base-mc_s0.jsonl": {
+   "step10s_ttl300": 0.7104,
+   "step10s_ttl3600": 0.7104,
+   "step30s_ttl300": 0.7104,
+   "step30s_ttl3600": 0.7104,
+   "step60s_ttl300": 0.7104,
+   "step60s_ttl3600": 0.7104,
+   "step120s_ttl300": 0.6225,
+   "step120s_ttl3600": 0.7104
+  },
+  "20260925T211328_base-pfs_s0.jsonl": {
+   "step10s_ttl300": 0.8963,
+   "step10s_ttl3600": 0.8963,
+   "step30s_ttl300": 0.8963,
+   "step30s_ttl3600": 0.8963,
+   "step60s_ttl300": 0.8702,
+   "step60s_ttl3600": 0.8963,
+   "step120s_ttl300": 0.8702,
+   "step120s_ttl3600": 0.8963
+  },
+  "20260925T211328_base-rc_s0.jsonl": {
+   "step10s_ttl300": 0.4532,
+   "step10s_ttl3600": 0.4532,
+   "step30s_ttl300": 0.4532,
+   "step30s_ttl3600": 0.4532,
+   "step60s_ttl300": 0.4532,
+   "step60s_ttl3600": 0.4532,
+   "step120s_ttl300": 0.4288,
+   "step120s_ttl3600": 0.4532
+  },
+  "20260925T211329_A6_RC+warmer_s0.jsonl": {
+   "step10s_ttl300": 0.5827,
+   "step10s_ttl3600": 0.5827,
+   "step30s_ttl300": 0.5827,
+   "step30s_ttl3600": 0.5827,
+   "step60s_ttl300": 0.5827,
+   "step60s_ttl3600": 0.5827,
+   "step120s_ttl300": 0.5641,
+   "step120s_ttl3600": 0.5827
+  },
+  "20260925T211329_B1_MC+frozen-tools_s0.jsonl": {
+   "step10s_ttl300": 0.7811,
+   "step10s_ttl3600": 0.7811,
+   "step30s_ttl300": 0.7811,
+   "step30s_ttl3600": 0.7811,
+   "step60s_ttl300": 0.7811,
+   "step60s_ttl3600": 0.7811,
+   "step120s_ttl300": 0.7629,
+   "step120s_ttl3600": 0.7811
+  },
+  "20260925T211329_B2_MC-no-warmer_s0.jsonl": {
+   "step10s_ttl300": 0.6229,
+   "step10s_ttl3600": 0.6229,
+   "step30s_ttl300": 0.6229,
+   "step30s_ttl3600": 0.6229,
+   "step60s_ttl300": 0.6229,
+   "step60s_ttl3600": 0.6229,
+   "step120s_ttl300": 0.5084,
+   "step120s_ttl3600": 0.6229
+  },
+  "20260925T211329_B3_MC+frozen-env_s0.jsonl": {
+   "step10s_ttl300": 0.7709,
+   "step10s_ttl3600": 0.7709,
+   "step30s_ttl300": 0.7512,
+   "step30s_ttl3600": 0.7709,
+   "step60s_ttl300": 0.7512,
+   "step60s_ttl3600": 0.7709,
+   "step120s_ttl300": 0.6777,
+   "step120s_ttl3600": 0.7709
+  },
+  "20260925T211329_B4_MC+cache_aware_s0.jsonl": {
+   "step10s_ttl300": 0.7829,
+   "step10s_ttl3600": 0.7829,
+   "step30s_ttl300": 0.7829,
+   "step30s_ttl3600": 0.7829,
+   "step60s_ttl300": 0.7829,
+   "step60s_ttl3600": 0.7829,
+   "step120s_ttl300": 0.695,
+   "step120s_ttl3600": 0.7829
+  },
+  "20260925T211329_B5_MC+per_stratum_bp_s0.jsonl": {
+   "step10s_ttl300": 0.7104,
+   "step10s_ttl3600": 0.7104,
+   "step30s_ttl300": 0.7104,
+   "step30s_ttl3600": 0.7104,
+   "step60s_ttl300": 0.7104,
+   "step60s_ttl3600": 0.7104,
+   "step120s_ttl300": 0.6225,
+   "step120s_ttl3600": 0.7104
+  },
+  "20260925T211329_C1_PFS-per_step-env_s0.jsonl": {
+   "step10s_ttl300": 0.7653,
+   "step10s_ttl3600": 0.7653,
+   "step30s_ttl300": 0.7653,
+   "step30s_ttl3600": 0.7653,
+   "step60s_ttl300": 0.7653,
+   "step60s_ttl3600": 0.7653,
+   "step120s_ttl300": 0.6945,
+   "step120s_ttl3600": 0.7653
+  },
+  "20260925T211329_C2_PFS-per_step-tools_s0.jsonl": {
+   "step10s_ttl300": 0.7976,
+   "step10s_ttl3600": 0.7976,
+   "step30s_ttl300": 0.7976,
+   "step30s_ttl3600": 0.7976,
+   "step60s_ttl300": 0.7715,
+   "step60s_ttl3600": 0.7976,
+   "step120s_ttl300": 0.6741,
+   "step120s_ttl3600": 0.7976
+  },
+  "20260925T211330_C3_PFS-cache_dead_s0.jsonl": {
+   "step10s_ttl300": 0.818,
+   "step10s_ttl3600": 0.818,
+   "step30s_ttl300": 0.818,
+   "step30s_ttl3600": 0.818,
+   "step60s_ttl300": 0.7911,
+   "step60s_ttl3600": 0.818,
+   "step120s_ttl300": 0.7911,
+   "step120s_ttl3600": 0.818
+  },
+  "20260925T211330_C4_PFS-single-system_s0.jsonl": {
+   "step10s_ttl300": 0.8962,
+   "step10s_ttl3600": 0.8962,
+   "step30s_ttl300": 0.8962,
+   "step30s_ttl3600": 0.8962,
+   "step60s_ttl300": 0.8702,
+   "step60s_ttl3600": 0.8962,
+   "step120s_ttl300": 0.8702,
+   "step120s_ttl3600": 0.8962
+  },
+  "20260925T211330_C5_PFS+warmer_s0.jsonl": {
+   "step10s_ttl300": 0.9217,
+   "step10s_ttl3600": 0.9217,
+   "step30s_ttl300": 0.902,
+   "step30s_ttl3600": 0.9217,
+   "step60s_ttl300": 0.902,
+   "step60s_ttl3600": 0.9217,
+   "step120s_ttl300": 0.902,
+   "step120s_ttl3600": 0.9217
+  }
+ }
+}

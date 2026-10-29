@@ -1,0 +1,1307 @@
+{
+ "seconds_per_step": 30.0,
+ "ttl": 300,
+ "table": {
+  "20260925T210927_mc_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 4,
+    "aggregate_lcp_ratio": 0.6358,
+    "mean_pairwise_lcp_ratio": 0.6851,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.2532
+     }
+    ],
+    "n_invalidation_events": 3,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2568
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 17,
+    "total_tokens": 242999,
+    "read_tokens": 172627,
+    "write_tokens": 52568,
+    "uncached_tokens": 17804,
+    "cached_read_tokens": 172627,
+    "overall_hit_ratio": 0.7104,
+    "turn_only_hit_ratio": 0.6886,
+    "total_cost_units": 0.100777,
+    "nocache_cost_units": 0.242999,
+    "cost_vs_nocache": 0.4147,
+    "turn_only_cost_vs_nocache": 0.4581
+   },
+   "openai": {
+    "requests": 17,
+    "total_tokens": 242999,
+    "read_tokens": 194048,
+    "write_tokens": 48951,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 194048,
+    "overall_hit_ratio": 0.7986,
+    "turn_only_hit_ratio": 0.7128,
+    "total_cost_units": 0.080594,
+    "nocache_cost_units": 0.242999,
+    "cost_vs_nocache": 0.3317,
+    "turn_only_cost_vs_nocache": 0.4303
+   }
+  },
+  "20260925T210927_pfs_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.9139,
+    "mean_pairwise_lcp_ratio": 0.9326,
+    "invalidation_events": [],
+    "n_invalidation_events": 0,
+    "transcript_reset_events": [
+     {
+      "at_step": 9,
+      "lcp_ratio": 0.2587
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 4
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 174630,
+    "read_tokens": 156516,
+    "write_tokens": 18082,
+    "uncached_tokens": 32,
+    "cached_read_tokens": 156516,
+    "overall_hit_ratio": 0.8963,
+    "turn_only_hit_ratio": 0.8852,
+    "total_cost_units": 0.038286,
+    "nocache_cost_units": 0.17463,
+    "cost_vs_nocache": 0.2192,
+    "turn_only_cost_vs_nocache": 0.232
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 174630,
+    "read_tokens": 155648,
+    "write_tokens": 18982,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 155648,
+    "overall_hit_ratio": 0.8913,
+    "turn_only_hit_ratio": 0.8804,
+    "total_cost_units": 0.039292,
+    "nocache_cost_units": 0.17463,
+    "cost_vs_nocache": 0.225,
+    "turn_only_cost_vs_nocache": 0.2376
+   }
+  },
+  "20260925T210927_rc_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.5114,
+    "mean_pairwise_lcp_ratio": 0.5762,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 4,
+      "region": "system",
+      "lcp_ratio": 0.0251
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.0297
+     }
+    ],
+    "n_invalidation_events": 4,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2573
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 181926,
+    "read_tokens": 82453,
+    "write_tokens": 99473,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 82453,
+    "overall_hit_ratio": 0.4532,
+    "turn_only_hit_ratio": 0.488,
+    "total_cost_units": 0.132587,
+    "nocache_cost_units": 0.181926,
+    "cost_vs_nocache": 0.7288,
+    "turn_only_cost_vs_nocache": 0.6888
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 181926,
+    "read_tokens": 82176,
+    "write_tokens": 99750,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 82176,
+    "overall_hit_ratio": 0.4517,
+    "turn_only_hit_ratio": 0.4864,
+    "total_cost_units": 0.132905,
+    "nocache_cost_units": 0.181926,
+    "cost_vs_nocache": 0.7305,
+    "turn_only_cost_vs_nocache": 0.6907
+   }
+  },
+  "20260925T211328_A1_RC+frozen-env_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.6915,
+    "mean_pairwise_lcp_ratio": 0.7531,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.0129
+     }
+    ],
+    "n_invalidation_events": 2,
+    "transcript_reset_events": [
+     {
+      "at_step": 9,
+      "lcp_ratio": 0.2582
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 169358,
+    "read_tokens": 121305,
+    "write_tokens": 48053,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 121305,
+    "overall_hit_ratio": 0.7163,
+    "turn_only_hit_ratio": 0.7753,
+    "total_cost_units": 0.072197,
+    "nocache_cost_units": 0.169358,
+    "cost_vs_nocache": 0.4263,
+    "turn_only_cost_vs_nocache": 0.3584
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 169358,
+    "read_tokens": 120704,
+    "write_tokens": 48654,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 120704,
+    "overall_hit_ratio": 0.7127,
+    "turn_only_hit_ratio": 0.7715,
+    "total_cost_units": 0.072888,
+    "nocache_cost_units": 0.169358,
+    "cost_vs_nocache": 0.4304,
+    "turn_only_cost_vs_nocache": 0.3628
+   }
+  },
+  "20260925T211328_A2_RC+frozen-tools_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.7166,
+    "mean_pairwise_lcp_ratio": 0.7561,
+    "invalidation_events": [
+     {
+      "at_step": 4,
+      "region": "system",
+      "lcp_ratio": 0.03
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.0297
+     }
+    ],
+    "n_invalidation_events": 2,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2573
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 182184,
+    "read_tokens": 116690,
+    "write_tokens": 65494,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 116690,
+    "overall_hit_ratio": 0.6405,
+    "turn_only_hit_ratio": 0.6896,
+    "total_cost_units": 0.093537,
+    "nocache_cost_units": 0.182184,
+    "cost_vs_nocache": 0.5134,
+    "turn_only_cost_vs_nocache": 0.457
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 182184,
+    "read_tokens": 116224,
+    "write_tokens": 65960,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 116224,
+    "overall_hit_ratio": 0.6379,
+    "turn_only_hit_ratio": 0.6868,
+    "total_cost_units": 0.094072,
+    "nocache_cost_units": 0.182184,
+    "cost_vs_nocache": 0.5164,
+    "turn_only_cost_vs_nocache": 0.4601
+   }
+  },
+  "20260925T211328_A3_RC+stratified3_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.5593,
+    "mean_pairwise_lcp_ratio": 0.6177,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 4,
+      "region": "system",
+      "lcp_ratio": 0.2565
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.2543
+     }
+    ],
+    "n_invalidation_events": 4,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2579
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 182094,
+    "read_tokens": 95162,
+    "write_tokens": 86932,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 95162,
+    "overall_hit_ratio": 0.5226,
+    "turn_only_hit_ratio": 0.5627,
+    "total_cost_units": 0.118181,
+    "nocache_cost_units": 0.182094,
+    "cost_vs_nocache": 0.649,
+    "turn_only_cost_vs_nocache": 0.6029
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 182094,
+    "read_tokens": 95232,
+    "write_tokens": 86862,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 95232,
+    "overall_hit_ratio": 0.523,
+    "turn_only_hit_ratio": 0.5631,
+    "total_cost_units": 0.118101,
+    "nocache_cost_units": 0.182094,
+    "cost_vs_nocache": 0.6486,
+    "turn_only_cost_vs_nocache": 0.6025
+   }
+  },
+  "20260925T211328_A4_RC+per_stratum_bp_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.5114,
+    "mean_pairwise_lcp_ratio": 0.5762,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 4,
+      "region": "system",
+      "lcp_ratio": 0.0251
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.0297
+     }
+    ],
+    "n_invalidation_events": 4,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2573
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 2
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 181926,
+    "read_tokens": 82453,
+    "write_tokens": 99473,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 82453,
+    "overall_hit_ratio": 0.4532,
+    "turn_only_hit_ratio": 0.488,
+    "total_cost_units": 0.132587,
+    "nocache_cost_units": 0.181926,
+    "cost_vs_nocache": 0.7288,
+    "turn_only_cost_vs_nocache": 0.6888
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 181926,
+    "read_tokens": 82176,
+    "write_tokens": 99750,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 82176,
+    "overall_hit_ratio": 0.4517,
+    "turn_only_hit_ratio": 0.4864,
+    "total_cost_units": 0.132905,
+    "nocache_cost_units": 0.181926,
+    "cost_vs_nocache": 0.7305,
+    "turn_only_cost_vs_nocache": 0.6907
+   }
+  },
+  "20260925T211328_A5_RC+cache_aware_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.5114,
+    "mean_pairwise_lcp_ratio": 0.5762,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 4,
+      "region": "system",
+      "lcp_ratio": 0.0251
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.0297
+     }
+    ],
+    "n_invalidation_events": 4,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2573
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 186776,
+    "read_tokens": 100092,
+    "write_tokens": 86652,
+    "uncached_tokens": 32,
+    "cached_read_tokens": 100092,
+    "overall_hit_ratio": 0.5359,
+    "turn_only_hit_ratio": 0.488,
+    "total_cost_units": 0.118356,
+    "nocache_cost_units": 0.186776,
+    "cost_vs_nocache": 0.6337,
+    "turn_only_cost_vs_nocache": 0.6888
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 186776,
+    "read_tokens": 99712,
+    "write_tokens": 87064,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 99712,
+    "overall_hit_ratio": 0.5339,
+    "turn_only_hit_ratio": 0.4864,
+    "total_cost_units": 0.118801,
+    "nocache_cost_units": 0.186776,
+    "cost_vs_nocache": 0.6361,
+    "turn_only_cost_vs_nocache": 0.6907
+   }
+  },
+  "20260925T211328_base-mc_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 4,
+    "aggregate_lcp_ratio": 0.6358,
+    "mean_pairwise_lcp_ratio": 0.6851,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.2532
+     }
+    ],
+    "n_invalidation_events": 3,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2568
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 17,
+    "total_tokens": 242999,
+    "read_tokens": 172627,
+    "write_tokens": 52568,
+    "uncached_tokens": 17804,
+    "cached_read_tokens": 172627,
+    "overall_hit_ratio": 0.7104,
+    "turn_only_hit_ratio": 0.6886,
+    "total_cost_units": 0.100777,
+    "nocache_cost_units": 0.242999,
+    "cost_vs_nocache": 0.4147,
+    "turn_only_cost_vs_nocache": 0.4581
+   },
+   "openai": {
+    "requests": 17,
+    "total_tokens": 242999,
+    "read_tokens": 194048,
+    "write_tokens": 48951,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 194048,
+    "overall_hit_ratio": 0.7986,
+    "turn_only_hit_ratio": 0.7128,
+    "total_cost_units": 0.080594,
+    "nocache_cost_units": 0.242999,
+    "cost_vs_nocache": 0.3317,
+    "turn_only_cost_vs_nocache": 0.4303
+   }
+  },
+  "20260925T211328_base-pfs_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.9139,
+    "mean_pairwise_lcp_ratio": 0.9326,
+    "invalidation_events": [],
+    "n_invalidation_events": 0,
+    "transcript_reset_events": [
+     {
+      "at_step": 9,
+      "lcp_ratio": 0.2587
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 4
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 174630,
+    "read_tokens": 156516,
+    "write_tokens": 18082,
+    "uncached_tokens": 32,
+    "cached_read_tokens": 156516,
+    "overall_hit_ratio": 0.8963,
+    "turn_only_hit_ratio": 0.8852,
+    "total_cost_units": 0.038286,
+    "nocache_cost_units": 0.17463,
+    "cost_vs_nocache": 0.2192,
+    "turn_only_cost_vs_nocache": 0.232
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 174630,
+    "read_tokens": 155648,
+    "write_tokens": 18982,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 155648,
+    "overall_hit_ratio": 0.8913,
+    "turn_only_hit_ratio": 0.8804,
+    "total_cost_units": 0.039292,
+    "nocache_cost_units": 0.17463,
+    "cost_vs_nocache": 0.225,
+    "turn_only_cost_vs_nocache": 0.2376
+   }
+  },
+  "20260925T211328_base-rc_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.5114,
+    "mean_pairwise_lcp_ratio": 0.5762,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 4,
+      "region": "system",
+      "lcp_ratio": 0.0251
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.0297
+     }
+    ],
+    "n_invalidation_events": 4,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2573
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 181926,
+    "read_tokens": 82453,
+    "write_tokens": 99473,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 82453,
+    "overall_hit_ratio": 0.4532,
+    "turn_only_hit_ratio": 0.488,
+    "total_cost_units": 0.132587,
+    "nocache_cost_units": 0.181926,
+    "cost_vs_nocache": 0.7288,
+    "turn_only_cost_vs_nocache": 0.6888
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 181926,
+    "read_tokens": 82176,
+    "write_tokens": 99750,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 82176,
+    "overall_hit_ratio": 0.4517,
+    "turn_only_hit_ratio": 0.4864,
+    "total_cost_units": 0.132905,
+    "nocache_cost_units": 0.181926,
+    "cost_vs_nocache": 0.7305,
+    "turn_only_cost_vs_nocache": 0.6907
+   }
+  },
+  "20260925T211329_A6_RC+warmer_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 4,
+    "aggregate_lcp_ratio": 0.5114,
+    "mean_pairwise_lcp_ratio": 0.5762,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 4,
+      "region": "system",
+      "lcp_ratio": 0.0251
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.0297
+     }
+    ],
+    "n_invalidation_events": 4,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2573
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 17,
+    "total_tokens": 238370,
+    "read_tokens": 138897,
+    "write_tokens": 99473,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 138897,
+    "overall_hit_ratio": 0.5827,
+    "turn_only_hit_ratio": 0.488,
+    "total_cost_units": 0.138231,
+    "nocache_cost_units": 0.23837,
+    "cost_vs_nocache": 0.5799,
+    "turn_only_cost_vs_nocache": 0.6888
+   },
+   "openai": {
+    "requests": 17,
+    "total_tokens": 238370,
+    "read_tokens": 138368,
+    "write_tokens": 100002,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 138368,
+    "overall_hit_ratio": 0.5805,
+    "turn_only_hit_ratio": 0.4864,
+    "total_cost_units": 0.138839,
+    "nocache_cost_units": 0.23837,
+    "cost_vs_nocache": 0.5825,
+    "turn_only_cost_vs_nocache": 0.6907
+   }
+  },
+  "20260925T211329_B1_MC+frozen-tools_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 4,
+    "aggregate_lcp_ratio": 0.8409,
+    "mean_pairwise_lcp_ratio": 0.8645,
+    "invalidation_events": [
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.2532
+     }
+    ],
+    "n_invalidation_events": 1,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2568
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 17,
+    "total_tokens": 243343,
+    "read_tokens": 190081,
+    "write_tokens": 35458,
+    "uncached_tokens": 17804,
+    "cached_read_tokens": 190081,
+    "overall_hit_ratio": 0.7811,
+    "turn_only_hit_ratio": 0.7903,
+    "total_cost_units": 0.081135,
+    "nocache_cost_units": 0.243343,
+    "cost_vs_nocache": 0.3334,
+    "turn_only_cost_vs_nocache": 0.3412
+   },
+   "openai": {
+    "requests": 17,
+    "total_tokens": 243343,
+    "read_tokens": 211456,
+    "write_tokens": 31887,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 211456,
+    "overall_hit_ratio": 0.869,
+    "turn_only_hit_ratio": 0.8139,
+    "total_cost_units": 0.061004,
+    "nocache_cost_units": 0.243343,
+    "cost_vs_nocache": 0.2507,
+    "turn_only_cost_vs_nocache": 0.314
+   }
+  },
+  "20260925T211329_B2_MC-no-warmer_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.6358,
+    "mean_pairwise_lcp_ratio": 0.6851,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.2532
+     }
+    ],
+    "n_invalidation_events": 3,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2568
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 186607,
+    "read_tokens": 116235,
+    "write_tokens": 52568,
+    "uncached_tokens": 17804,
+    "cached_read_tokens": 116235,
+    "overall_hit_ratio": 0.6229,
+    "turn_only_hit_ratio": 0.6886,
+    "total_cost_units": 0.095137,
+    "nocache_cost_units": 0.186607,
+    "cost_vs_nocache": 0.5098,
+    "turn_only_cost_vs_nocache": 0.4581
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 186607,
+    "read_tokens": 137856,
+    "write_tokens": 48751,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 137856,
+    "overall_hit_ratio": 0.7388,
+    "turn_only_hit_ratio": 0.7128,
+    "total_cost_units": 0.074724,
+    "nocache_cost_units": 0.186607,
+    "cost_vs_nocache": 0.4004,
+    "turn_only_cost_vs_nocache": 0.4303
+   }
+  },
+  "20260925T211329_B3_MC+frozen-env_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 4,
+    "aggregate_lcp_ratio": 0.6915,
+    "mean_pairwise_lcp_ratio": 0.7531,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.0129
+     }
+    ],
+    "n_invalidation_events": 2,
+    "transcript_reset_events": [
+     {
+      "at_step": 9,
+      "lcp_ratio": 0.2582
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 17,
+    "total_tokens": 230865,
+    "read_tokens": 173420,
+    "write_tokens": 39704,
+    "uncached_tokens": 17741,
+    "cached_read_tokens": 173420,
+    "overall_hit_ratio": 0.7512,
+    "turn_only_hit_ratio": 0.7462,
+    "total_cost_units": 0.084713,
+    "nocache_cost_units": 0.230865,
+    "cost_vs_nocache": 0.3669,
+    "turn_only_cost_vs_nocache": 0.3918
+   },
+   "openai": {
+    "requests": 17,
+    "total_tokens": 230865,
+    "read_tokens": 194688,
+    "write_tokens": 36177,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 194688,
+    "overall_hit_ratio": 0.8433,
+    "turn_only_hit_ratio": 0.7715,
+    "total_cost_units": 0.06469,
+    "nocache_cost_units": 0.230865,
+    "cost_vs_nocache": 0.2802,
+    "turn_only_cost_vs_nocache": 0.3628
+   }
+  },
+  "20260925T211329_B4_MC+cache_aware_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 4,
+    "aggregate_lcp_ratio": 0.6358,
+    "mean_pairwise_lcp_ratio": 0.6851,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.2532
+     }
+    ],
+    "n_invalidation_events": 3,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2568
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "anthropic": {
+    "requests": 17,
+    "total_tokens": 242999,
+    "read_tokens": 190253,
+    "write_tokens": 52714,
+    "uncached_tokens": 32,
+    "cached_read_tokens": 190253,
+    "overall_hit_ratio": 0.7829,
+    "turn_only_hit_ratio": 0.6886,
+    "total_cost_units": 0.08495,
+    "nocache_cost_units": 0.242999,
+    "cost_vs_nocache": 0.3496,
+    "turn_only_cost_vs_nocache": 0.4581
+   },
+   "openai": {
+    "requests": 17,
+    "total_tokens": 242999,
+    "read_tokens": 194048,
+    "write_tokens": 48951,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 194048,
+    "overall_hit_ratio": 0.7986,
+    "turn_only_hit_ratio": 0.7128,
+    "total_cost_units": 0.080594,
+    "nocache_cost_units": 0.242999,
+    "cost_vs_nocache": 0.3317,
+    "turn_only_cost_vs_nocache": 0.4303
+   }
+  },
+  "20260925T211329_B5_MC+per_stratum_bp_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 4,
+    "aggregate_lcp_ratio": 0.6358,
+    "mean_pairwise_lcp_ratio": 0.6851,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.013
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.2532
+     }
+    ],
+    "n_invalidation_events": 3,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2568
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 2
+   },
+   "anthropic": {
+    "requests": 17,
+    "total_tokens": 242999,
+    "read_tokens": 172627,
+    "write_tokens": 52568,
+    "uncached_tokens": 17804,
+    "cached_read_tokens": 172627,
+    "overall_hit_ratio": 0.7104,
+    "turn_only_hit_ratio": 0.6886,
+    "total_cost_units": 0.100777,
+    "nocache_cost_units": 0.242999,
+    "cost_vs_nocache": 0.4147,
+    "turn_only_cost_vs_nocache": 0.4581
+   },
+   "openai": {
+    "requests": 17,
+    "total_tokens": 242999,
+    "read_tokens": 194048,
+    "write_tokens": 48951,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 194048,
+    "overall_hit_ratio": 0.7986,
+    "turn_only_hit_ratio": 0.7128,
+    "total_cost_units": 0.080594,
+    "nocache_cost_units": 0.242999,
+    "cost_vs_nocache": 0.3317,
+    "turn_only_cost_vs_nocache": 0.4303
+   }
+  },
+  "20260925T211329_C1_PFS-per_step-env_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.7645,
+    "mean_pairwise_lcp_ratio": 0.7975,
+    "invalidation_events": [
+     {
+      "at_step": 4,
+      "region": "system",
+      "lcp_ratio": 0.2602
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.2543
+     }
+    ],
+    "n_invalidation_events": 2,
+    "transcript_reset_events": [
+     {
+      "at_step": 10,
+      "lcp_ratio": 0.2579
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 4
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 187216,
+    "read_tokens": 143269,
+    "write_tokens": 43915,
+    "uncached_tokens": 32,
+    "cached_read_tokens": 143269,
+    "overall_hit_ratio": 0.7653,
+    "turn_only_hit_ratio": 0.7416,
+    "total_cost_units": 0.069253,
+    "nocache_cost_units": 0.187216,
+    "cost_vs_nocache": 0.3699,
+    "turn_only_cost_vs_nocache": 0.3972
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 187216,
+    "read_tokens": 142464,
+    "write_tokens": 44752,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 142464,
+    "overall_hit_ratio": 0.761,
+    "turn_only_hit_ratio": 0.7375,
+    "total_cost_units": 0.070186,
+    "nocache_cost_units": 0.187216,
+    "cost_vs_nocache": 0.3749,
+    "turn_only_cost_vs_nocache": 0.4018
+   }
+  },
+  "20260925T211329_C2_PFS-per_step-tools_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.6916,
+    "mean_pairwise_lcp_ratio": 0.7532,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.0129
+     }
+    ],
+    "n_invalidation_events": 2,
+    "transcript_reset_events": [
+     {
+      "at_step": 9,
+      "lcp_ratio": 0.2587
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 4
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 174372,
+    "read_tokens": 139080,
+    "write_tokens": 35260,
+    "uncached_tokens": 32,
+    "cached_read_tokens": 139080,
+    "overall_hit_ratio": 0.7976,
+    "turn_only_hit_ratio": 0.7754,
+    "total_cost_units": 0.058015,
+    "nocache_cost_units": 0.174372,
+    "cost_vs_nocache": 0.3327,
+    "turn_only_cost_vs_nocache": 0.3583
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 174372,
+    "read_tokens": 138240,
+    "write_tokens": 36132,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 138240,
+    "overall_hit_ratio": 0.7928,
+    "turn_only_hit_ratio": 0.7707,
+    "total_cost_units": 0.058989,
+    "nocache_cost_units": 0.174372,
+    "cost_vs_nocache": 0.3383,
+    "turn_only_cost_vs_nocache": 0.3637
+   }
+  },
+  "20260925T211330_C3_PFS-cache_dead_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.9139,
+    "mean_pairwise_lcp_ratio": 0.9326,
+    "invalidation_events": [],
+    "n_invalidation_events": 0,
+    "transcript_reset_events": [
+     {
+      "at_step": 9,
+      "lcp_ratio": 0.2587
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 4
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 169772,
+    "read_tokens": 138871,
+    "write_tokens": 30901,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 138871,
+    "overall_hit_ratio": 0.818,
+    "turn_only_hit_ratio": 0.8852,
+    "total_cost_units": 0.052513,
+    "nocache_cost_units": 0.169772,
+    "cost_vs_nocache": 0.3093,
+    "turn_only_cost_vs_nocache": 0.232
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 169772,
+    "read_tokens": 138112,
+    "write_tokens": 31660,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 138112,
+    "overall_hit_ratio": 0.8135,
+    "turn_only_hit_ratio": 0.8804,
+    "total_cost_units": 0.053386,
+    "nocache_cost_units": 0.169772,
+    "cost_vs_nocache": 0.3145,
+    "turn_only_cost_vs_nocache": 0.2376
+   }
+  },
+  "20260925T211330_C4_PFS-single-system_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.9138,
+    "mean_pairwise_lcp_ratio": 0.9326,
+    "invalidation_events": [],
+    "n_invalidation_events": 0,
+    "transcript_reset_events": [
+     {
+      "at_step": 9,
+      "lcp_ratio": 0.2582
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 2
+   },
+   "anthropic": {
+    "requests": 13,
+    "total_tokens": 174461,
+    "read_tokens": 156360,
+    "write_tokens": 18069,
+    "uncached_tokens": 32,
+    "cached_read_tokens": 156360,
+    "overall_hit_ratio": 0.8962,
+    "turn_only_hit_ratio": 0.8852,
+    "total_cost_units": 0.038254,
+    "nocache_cost_units": 0.174461,
+    "cost_vs_nocache": 0.2193,
+    "turn_only_cost_vs_nocache": 0.232
+   },
+   "openai": {
+    "requests": 13,
+    "total_tokens": 174461,
+    "read_tokens": 155648,
+    "write_tokens": 18813,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 155648,
+    "overall_hit_ratio": 0.8922,
+    "turn_only_hit_ratio": 0.8813,
+    "total_cost_units": 0.039081,
+    "nocache_cost_units": 0.174461,
+    "cost_vs_nocache": 0.224,
+    "turn_only_cost_vs_nocache": 0.2365
+   }
+  },
+  "20260925T211330_C5_PFS+warmer_s0.jsonl": {
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 4,
+    "aggregate_lcp_ratio": 0.9139,
+    "mean_pairwise_lcp_ratio": 0.9326,
+    "invalidation_events": [],
+    "n_invalidation_events": 0,
+    "transcript_reset_events": [
+     {
+      "at_step": 9,
+      "lcp_ratio": 0.2587
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 4
+   },
+   "anthropic": {
+    "requests": 17,
+    "total_tokens": 231430,
+    "read_tokens": 208756,
+    "write_tokens": 22642,
+    "uncached_tokens": 32,
+    "cached_read_tokens": 208756,
+    "overall_hit_ratio": 0.902,
+    "turn_only_hit_ratio": 0.8562,
+    "total_cost_units": 0.04921,
+    "nocache_cost_units": 0.23143,
+    "cost_vs_nocache": 0.2126,
+    "turn_only_cost_vs_nocache": 0.2654
+   },
+   "openai": {
+    "requests": 17,
+    "total_tokens": 231430,
+    "read_tokens": 212096,
+    "write_tokens": 19334,
+    "uncached_tokens": 0,
+    "cached_read_tokens": 212096,
+    "overall_hit_ratio": 0.9165,
+    "turn_only_hit_ratio": 0.8804,
+    "total_cost_units": 0.045377,
+    "nocache_cost_units": 0.23143,
+    "cost_vs_nocache": 0.1961,
+    "turn_only_cost_vs_nocache": 0.2376
+   }
+  }
+ }
+}

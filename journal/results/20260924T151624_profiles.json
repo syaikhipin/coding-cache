@@ -1,0 +1,524 @@
+{
+ "ts": "2026-09-24T15:16:24",
+ "kind": "profiles",
+ "config": {
+  "steps": 12,
+  "seed": 0,
+  "compact_at": 12400,
+  "api": "script",
+  "profiles": "pfs,rc,mc"
+ },
+ "results": {
+  "pfs": {
+   "record": {
+    "ts": "2026-09-24T15:16:23",
+    "profile": "pfs",
+    "mechanisms": {
+     "system_stratification": "stratified3",
+     "breakpoint_style": "per_stratum",
+     "env_mode": "frozen",
+     "compaction": "cache_aware",
+     "tool_order": "frozen",
+     "cache_warmer": false,
+     "inject_env_change_at_step": null,
+     "compact_at_tokens": null
+    },
+    "task": "toy-repo",
+    "steps": 12,
+    "seed": 0,
+    "api_mode": "script",
+    "model": "dh/dahono/deepseek-v4.1-flash",
+    "env_change_steps": [
+     4,
+     8
+    ],
+    "compact_at_tokens": 12400,
+    "env_notes_delivered": [
+     "[env change] {'cwd': '/workspace/toy-repo', 'model': 'dh/dahono/deepseek-v4.1-flash', 'date': '2026-09-23', 'git_status': 'M calc.py', 'platform': 'macOS-25.2'}",
+     "[env change] {'cwd': '/workspace/toy-repo', 'model': 'dh/dahono/deepseek-v4.1-flash', 'date': '2026-09-23', 'git_status': 'M calc.py\\nM shapes.py', 'platform': 'macOS-25.2'}"
+    ]
+   },
+   "trace": "/Users/syaikhipin/Documents/Phd/Publish Paper/cachehit/mini-journal/journal/20260924T151623_pfs_s0.jsonl",
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.8991,
+    "mean_pairwise_lcp_ratio": 0.9331,
+    "invalidation_events": [],
+    "n_invalidation_events": 0,
+    "transcript_reset_events": [
+     {
+      "at_step": 7,
+      "lcp_ratio": 0.2642
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 4
+   },
+   "metrics_pairs": [
+    {
+     "from_step": 0,
+     "to_step": 1,
+     "prev_tokens": 4553,
+     "cur_tokens": 16784,
+     "lcp_tokens": 4553,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 1,
+     "to_step": 2,
+     "prev_tokens": 16784,
+     "cur_tokens": 16910,
+     "lcp_tokens": 16784,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 2,
+     "to_step": 3,
+     "prev_tokens": 16910,
+     "cur_tokens": 16983,
+     "lcp_tokens": 16910,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 3,
+     "to_step": 4,
+     "prev_tokens": 16983,
+     "cur_tokens": 17066,
+     "lcp_tokens": 16983,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 4,
+     "to_step": 5,
+     "prev_tokens": 17066,
+     "cur_tokens": 17115,
+     "lcp_tokens": 17066,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 5,
+     "to_step": 6,
+     "prev_tokens": 17115,
+     "cur_tokens": 17247,
+     "lcp_tokens": 17115,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 6,
+     "to_step": 7,
+     "prev_tokens": 17247,
+     "cur_tokens": 4655,
+     "lcp_tokens": 4556,
+     "lcp_ratio_prev": 0.2642,
+     "lcp_break_region": "messages",
+     "transcript_reset": true
+    },
+    {
+     "from_step": 7,
+     "to_step": 8,
+     "prev_tokens": 4655,
+     "cur_tokens": 4744,
+     "lcp_tokens": 4655,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 8,
+     "to_step": 9,
+     "prev_tokens": 4744,
+     "cur_tokens": 4793,
+     "lcp_tokens": 4744,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 9,
+     "to_step": 10,
+     "prev_tokens": 4793,
+     "cur_tokens": 4912,
+     "lcp_tokens": 4793,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 10,
+     "to_step": 11,
+     "prev_tokens": 4912,
+     "cur_tokens": 4985,
+     "lcp_tokens": 4912,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    }
+   ]
+  },
+  "rc": {
+   "record": {
+    "ts": "2026-09-24T15:16:24",
+    "profile": "rc",
+    "mechanisms": {
+     "system_stratification": "single",
+     "breakpoint_style": "system_plus_trailing",
+     "env_mode": "per_step",
+     "compaction": "cache_dead",
+     "tool_order": "per_step_sorted",
+     "cache_warmer": false,
+     "inject_env_change_at_step": null,
+     "compact_at_tokens": null
+    },
+    "task": "toy-repo",
+    "steps": 12,
+    "seed": 0,
+    "api_mode": "script",
+    "model": "dh/dahono/deepseek-v4.1-flash",
+    "env_change_steps": [
+     4,
+     8
+    ],
+    "compact_at_tokens": 12400,
+    "env_notes_delivered": []
+   },
+   "trace": "/Users/syaikhipin/Documents/Phd/Publish Paper/cachehit/mini-journal/journal/20260924T151624_rc_s0.jsonl",
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 0,
+    "aggregate_lcp_ratio": 0.4671,
+    "mean_pairwise_lcp_ratio": 0.5842,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0132
+     },
+     {
+      "at_step": 4,
+      "region": "system",
+      "lcp_ratio": 0.0252
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.112
+     }
+    ],
+    "n_invalidation_events": 4,
+    "transcript_reset_events": [
+     {
+      "at_step": 7,
+      "lcp_ratio": 0.2632
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "metrics_pairs": [
+    {
+     "from_step": 0,
+     "to_step": 1,
+     "prev_tokens": 4524,
+     "cur_tokens": 16755,
+     "lcp_tokens": 4524,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 1,
+     "to_step": 2,
+     "prev_tokens": 16755,
+     "cur_tokens": 16881,
+     "lcp_tokens": 16755,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 2,
+     "to_step": 3,
+     "prev_tokens": 16881,
+     "cur_tokens": 16868,
+     "lcp_tokens": 222,
+     "lcp_ratio_prev": 0.0132,
+     "lcp_break_region": "tools",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 3,
+     "to_step": 4,
+     "prev_tokens": 16868,
+     "cur_tokens": 16932,
+     "lcp_tokens": 425,
+     "lcp_ratio_prev": 0.0252,
+     "lcp_break_region": "system",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 4,
+     "to_step": 5,
+     "prev_tokens": 16932,
+     "cur_tokens": 16981,
+     "lcp_tokens": 16932,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 5,
+     "to_step": 6,
+     "prev_tokens": 16981,
+     "cur_tokens": 17199,
+     "lcp_tokens": 222,
+     "lcp_ratio_prev": 0.0131,
+     "lcp_break_region": "tools",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 6,
+     "to_step": 7,
+     "prev_tokens": 17199,
+     "cur_tokens": 4626,
+     "lcp_tokens": 4527,
+     "lcp_ratio_prev": 0.2632,
+     "lcp_break_region": "messages",
+     "transcript_reset": true
+    },
+    {
+     "from_step": 7,
+     "to_step": 8,
+     "prev_tokens": 4626,
+     "cur_tokens": 4694,
+     "lcp_tokens": 518,
+     "lcp_ratio_prev": 0.112,
+     "lcp_break_region": "system",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 8,
+     "to_step": 9,
+     "prev_tokens": 4694,
+     "cur_tokens": 4743,
+     "lcp_tokens": 4694,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 9,
+     "to_step": 10,
+     "prev_tokens": 4743,
+     "cur_tokens": 4862,
+     "lcp_tokens": 4743,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 10,
+     "to_step": 11,
+     "prev_tokens": 4862,
+     "cur_tokens": 4935,
+     "lcp_tokens": 4862,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    }
+   ]
+  },
+  "mc": {
+   "record": {
+    "ts": "2026-09-24T15:16:24",
+    "profile": "mc",
+    "mechanisms": {
+     "system_stratification": "single",
+     "breakpoint_style": "system_tools_trailing",
+     "env_mode": "minimal",
+     "compaction": "retention_none",
+     "tool_order": "per_step_sorted",
+     "cache_warmer": true,
+     "inject_env_change_at_step": null,
+     "compact_at_tokens": null
+    },
+    "task": "toy-repo",
+    "steps": 12,
+    "seed": 0,
+    "api_mode": "script",
+    "model": "dh/dahono/deepseek-v4.1-flash",
+    "env_change_steps": [
+     4,
+     8
+    ],
+    "compact_at_tokens": 12400,
+    "env_notes_delivered": []
+   },
+   "trace": "/Users/syaikhipin/Documents/Phd/Publish Paper/cachehit/mini-journal/journal/20260924T151624_mc_s0.jsonl",
+   "metrics": {
+    "n_turn_requests": 12,
+    "n_compact_requests": 1,
+    "n_warmer_requests": 4,
+    "aggregate_lcp_ratio": 0.6297,
+    "mean_pairwise_lcp_ratio": 0.7497,
+    "invalidation_events": [
+     {
+      "at_step": 3,
+      "region": "tools",
+      "lcp_ratio": 0.0132
+     },
+     {
+      "at_step": 6,
+      "region": "tools",
+      "lcp_ratio": 0.0131
+     },
+     {
+      "at_step": 8,
+      "region": "system",
+      "lcp_ratio": 0.9579
+     }
+    ],
+    "n_invalidation_events": 3,
+    "transcript_reset_events": [
+     {
+      "at_step": 7,
+      "lcp_ratio": 0.2627
+     }
+    ],
+    "n_transcript_reset_events": 1,
+    "breakpoints_last_request": 3
+   },
+   "metrics_pairs": [
+    {
+     "from_step": 0,
+     "to_step": 1,
+     "prev_tokens": 4511,
+     "cur_tokens": 16742,
+     "lcp_tokens": 4511,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 1,
+     "to_step": 2,
+     "prev_tokens": 16742,
+     "cur_tokens": 16868,
+     "lcp_tokens": 16742,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 2,
+     "to_step": 3,
+     "prev_tokens": 16868,
+     "cur_tokens": 16855,
+     "lcp_tokens": 222,
+     "lcp_ratio_prev": 0.0132,
+     "lcp_break_region": "tools",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 3,
+     "to_step": 4,
+     "prev_tokens": 16855,
+     "cur_tokens": 16919,
+     "lcp_tokens": 16855,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 4,
+     "to_step": 5,
+     "prev_tokens": 16919,
+     "cur_tokens": 16968,
+     "lcp_tokens": 16919,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 5,
+     "to_step": 6,
+     "prev_tokens": 16968,
+     "cur_tokens": 17186,
+     "lcp_tokens": 222,
+     "lcp_ratio_prev": 0.0131,
+     "lcp_break_region": "tools",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 6,
+     "to_step": 7,
+     "prev_tokens": 17186,
+     "cur_tokens": 4613,
+     "lcp_tokens": 4514,
+     "lcp_ratio_prev": 0.2627,
+     "lcp_break_region": "messages",
+     "transcript_reset": true
+    },
+    {
+     "from_step": 7,
+     "to_step": 8,
+     "prev_tokens": 4613,
+     "cur_tokens": 4681,
+     "lcp_tokens": 4419,
+     "lcp_ratio_prev": 0.9579,
+     "lcp_break_region": "system",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 8,
+     "to_step": 9,
+     "prev_tokens": 4681,
+     "cur_tokens": 4730,
+     "lcp_tokens": 4681,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 9,
+     "to_step": 10,
+     "prev_tokens": 4730,
+     "cur_tokens": 4849,
+     "lcp_tokens": 4730,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    },
+    {
+     "from_step": 10,
+     "to_step": 11,
+     "prev_tokens": 4849,
+     "cur_tokens": 4922,
+     "lcp_tokens": 4849,
+     "lcp_ratio_prev": 1.0,
+     "lcp_break_region": "full",
+     "transcript_reset": false
+    }
+   ]
+  }
+ }
+}
